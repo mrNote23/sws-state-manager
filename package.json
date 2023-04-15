@@ -1,0 +1,21 @@
+{
+  "name": "sws-state-manager",
+  "version": "1.0.8",
+  "description": "State manager",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "State manager"
+  ],
+  "author": "AndreyS",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
