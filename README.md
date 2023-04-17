@@ -27,6 +27,7 @@
     <div id="app"></div>
     <p>Counter: <span id="counter"></span></p>
     <button id="btn-reset">Reset counter</button>
+    <script src="./index.ts" type="module"></script>
   </body>
 </html>
 ```
@@ -34,6 +35,8 @@
 ```typescript
 // index.ts
 import { State } from "sws-state-manager"
+
+const myState = new State()
 
 const appDiv: HTMLElement = document.getElementById("app")
 const appCounter: HTMLElement = document.getElementById("counter")
@@ -48,8 +51,6 @@ appButton.addEventListener("click", () => {
 const showCounter = (value) => {
   appCounter.textContent = value
 }
-
-const myState = new State()
 
 myState.store("counter", 0)
 myState.subscribe("counter", showCounter)
