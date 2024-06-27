@@ -1,20 +1,33 @@
 {
   "name": "sws-state-manager",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "State manager",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "keywords": [
+    "state",
+    "state manager",
+    "javascript",
+    "typescript",
+    "redux",
+    "mobx"
+  ],
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Andrey Suvorov",
+    "email": "suvorov.av93@yandex.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrNote23/sws-state-manager"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc"
   },
-  "files": [
-    "lib/**/*"
-  ],
-  "keywords": [
-    "State manager"
-  ],
-  "author": "AndreyS",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "^5.0.4"
   }
